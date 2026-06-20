@@ -4,7 +4,7 @@ import User from "../models/User.js";
 // Create User
 export const register = async (req, res) => {
   try {
-    const { token, name } = req.body;
+   
     
     if (!token) {
       return res.status(400).json({ success: false, message: "Token required" });
