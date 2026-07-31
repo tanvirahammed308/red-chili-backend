@@ -32,7 +32,7 @@ app.use("/api/cart", cartRoutes);
  app.use("/api/orders", orderRouter);
  
 app.get("/", (req, res) => {
-  res.send("Quick Bite Restaurant API Running");
+  res.send("Red Chili Restaurant API Running");
 });
 
 export default app;
