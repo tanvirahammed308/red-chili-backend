@@ -11,6 +11,7 @@ import cartRoutes from "./routes/cart.routes.js";
 
  import authRouter from "./routes/user.routes.js";
 import orderRouter from "./routes/order.routes.js";
+import paymentRoutes from "./routes/payment.routes.js";
  
 const app = express();
 
@@ -30,6 +31,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
  
  app.use("/api/orders", orderRouter);
+ app.use("/api/payment", paymentRoutes);
  
 app.get("/", (req, res) => {
   res.send("Red Chili Restaurant API Running");
